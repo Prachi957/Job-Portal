@@ -11,8 +11,8 @@ import { Button } from "./ui/button";
 import { BriefcaseBusiness, Heart, PenBox } from "lucide-react";
 
 const Header = () => {
+  
   const [showSignIn, setShowSignIn] = useState(false);
-
   const [search, setSearch] = useSearchParams();
   const { user } = useUser();
 
