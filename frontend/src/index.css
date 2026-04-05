@@ -65,6 +65,10 @@
   color: white;
 }
 
+.w-md-editor .wmde-markdown ul li {
+  color: black !important;
+}
+
 @layer base {
   * {
     @apply border-border;

@@ -66,7 +66,7 @@ export async function getSingleJob(token, { job_id }) {
 }
 
 // Add / Remove Saved Job
-export async function saveJob(token, { alreadySaved }, saveData) {
+export async function saveJob(token, options, { alreadySaved, ...saveData}) {
   const supabase = await supabaseClient(token);
 
   if (alreadySaved) {
